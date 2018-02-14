@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hubert.projekt2.MainActivity"
+    android:background="@drawable/board"
+    android:id="@+id/relativeLayout">
+
+
+
+
+    <TextView
+        android:contentDescription="@null"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="37dp"
+        android:text="Teraz kolej:"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="115dp"
+        android:onClick="game"
+        app:srcCompat="@drawable/blank"
+        android:tag="4"/>
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="false"
+        android:onClick="game"
+        app:srcCompat="@drawable/blank"
+        android:layout_above="@+id/imageView4"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4"
+        android:tag="1"/>
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/imageView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:onClick="game"
+        app:srcCompat="@drawable/blank"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:tag="0"/>
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="game"
+        app:srcCompat="@drawable/blank"
+        android:tag="2"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:layout_toEndOf="@+id/imageView1"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView0"
+        android:layout_alignStart="@+id/imageView0"
+        android:layout_below="@+id/imageView1"
+        android:onClick="game"
+        app:srcCompat="@drawable/blank"
+        android:tag="3"/>
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="game"
+        app:srcCompat="@drawable/blank"
+        android:tag="5"
+        android:layout_below="@+id/imageView1"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_marginBottom="10dp"
+        android:onClick="game"
+        app:srcCompat="@drawable/blank"
+        android:tag="6"/>
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="game"
+        app:srcCompat="@drawable/blank"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4"
+        android:tag="7"/>
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="game"
+        app:srcCompat="@drawable/blank"
+        android:tag="8"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5" />
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_toLeftOf="@+id/imageView5"
+        android:layout_toStartOf="@+id/imageView5"
+        app:srcCompat="@drawable/cross" />
+
+    <TextView
+        android:contentDescription="@null"
+        android:id="@+id/textViewWinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:textSize="25dp"
+        android:text="" />
+
+</RelativeLayout>
